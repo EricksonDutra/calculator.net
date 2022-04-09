@@ -8,7 +8,7 @@ static void Menu()
 
     Console.WriteLine("What do you want?");
 
-    Console.WriteLine("1 - Sum \n2 - Sub \n3 - Div \n4 - Mult");
+    Console.WriteLine("0 - Exit\n1 - Sum \n2 - Sub \n3 - Div \n4 - Mult\n");
     Console.WriteLine("##########################");
 
     Console.Write("Select a option: ");
@@ -16,6 +16,7 @@ static void Menu()
 
     switch (res)
     {
+        case 0: System.Environment.Exit(0); break;
         case 1: Soma(); break;
         case 2: Subtracao(); break;
         case 3: Divisao(); break;
